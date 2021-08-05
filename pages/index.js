@@ -121,6 +121,7 @@ const Index = () => {
   const videoRef = useRef()
   const audioRef = useRef()
   const [playing, setPlaying] = useState()
+  const [videoLoaded, setVideoLoaded] = useState(false)
   const [showVolume, setShowVolume] = useState()
   useEffect(() => {
     if (playing) {
@@ -145,19 +146,27 @@ const Index = () => {
     audioRef.current.loop = 'loop'
     audioRef.current.autoplay = 'true'
   }, [audioRef, playing])
+
   return (
     <>
       <Head />
 
       {/* <Header /> */}
       <div class="video-container">
-        <video ref={videoRef}>
+        <video onload={() => setVideoLoaded(true)} ref={videoRef}>
           <source
             src="https://qukdxrbnhfegteifevik.supabase.in/storage/v1/object/public/videos/production ID_5100156.mp4"
             type="video/mp4"
           />
         </video>
       </div>
+
+      {videoLoaded && (
+        <img
+          src="https://qukdxrbnhfegteifevik.supabase.in/storage/v1/object/public/videos/cover.sm.webp"
+          style={{ position: 'relative', width: '100%', height: '100%' }}
+        />
+      )}
 
       <div
         style={{
