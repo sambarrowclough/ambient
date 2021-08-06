@@ -1,4 +1,4 @@
-<img src="./.assets/Screen.png">
+<img src="https://qukdxrbnhfegteifevik.supabase.in/storage/v1/object/public/videos/cover.jpg">
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
