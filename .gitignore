@@ -6,6 +6,9 @@
 .pnp.js
 
 *.mp3
+*.mp4
+*.mkv
+*.webm
 
 # testing
 /coverage
