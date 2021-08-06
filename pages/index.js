@@ -206,7 +206,7 @@ const PopoverDemo = () => {
                 className="block pb-3 text-sm text-gray-800 flex items-center"
               >
                 <EnvelopeClosedIcon />
-                <span class="ml-2">{user.email}</span>
+                <span style={{ marginLeft: '10px' }}>{user.email}</span>
               </span>
               {/* <div
                 style={{
@@ -221,7 +221,7 @@ const PopoverDemo = () => {
                 className="block text-sm text-gray-800 flex items-center"
               >
                 <ExitIcon />
-                <span class="ml-2">Sign out</span>
+                <span style={{ marginLeft: '10px' }}>Sign out</span>
               </button>
             </>
           ) : (
